@@ -83,7 +83,9 @@ button:active {
 }
 
 @media only screen and (max-width: 425px) {
-
+body{
+    overflow: hidden;
+}
     .box {
         height: 600px;
         width: 89%;
