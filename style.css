@@ -90,9 +90,10 @@ button:active {
     }
 
     input {
-        height: 50px;
+        height: 70px;
         width: 90%;
         margin: 30px 10px 20px;
+        font-size: 12px;
     }
 
     .btn {
