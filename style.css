@@ -83,12 +83,10 @@ button:active {
 }
 
 @media only screen and (max-width: 425px) {
-body{
-    overflow: hidden;
-}
+
     .box {
-        height: 600px;
-        width: 89%;
+        height: 550px;
+        width: 85%;
     }
 
     input {
@@ -99,13 +97,12 @@ body{
 
     .btn {
         width: 96%;
-        margin-left: auto;
     }
 
     button {
-        height: 70px;
+        height: 60px;
         width: 20%;
-        margin-left: 11px;
+        margin: auto;
         border-radius: 30px;
         box-shadow: 0px 0px 8px 2px  rgb(255, 255, 255);
     }
