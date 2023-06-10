@@ -1,61 +1,161 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.calculator{
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.calculator {
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
 }
-.box{
+
+.box {
     height: 580px;
-    width: 30%;
-    border: 3px solid #B07BAC;
+    width: 20%;
+    box-shadow: 0px 0px 10px 10px #FFD662FF;
+    border: 2px solid white;
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 25px;
-    background-color: #31bdca;
+    background-color: #00539CFF ;
 }
-input{
+
+input {
     height: 100px;
     width: 90%;
-    background-color: #E0FBFD;
-    border: 3px solid #B07BAC;
+    background-color: #00539CFF;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px 5px #FFD662FF;
+    outline: none;
+    color: white;
     margin: 20px;
     padding-left: 10px;
     font-size: 50px;
     border-radius: 15px;
     display: flex;
 }
-.btn{
+
+.btn {
     height: 423px;
     width: 90%;
-    margin: auto;
 }
-.btn-sec{
+
+.btn-sec {
     height: 84px;
     width: 100%;
-    padding: 15px 0px; 
-   display: flex;
+    padding: 15px 0px;
+    display: flex;
 }
-button{
+
+button {
     height: 50px;
     width: 17%;
-    margin-left: 30px;
-    font-size: 20px;
-    background-color: #E0FBFD;
+    margin: auto;
+    font-size: 30px;
+    background-color: #FFD662FF;
+    color: #00539CFF;
     font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
-    border: 3px solid #B07BAC;
+    border: 2px solid white;
+    box-shadow: 0px 0px 15px 1px  rgb(255, 255, 255);
 }
-button:active{
-    background-color: #B07BAC;
+
+button:active {
+    box-shadow: 0px 0px 15px 4px  #FFD662FF;
+    background-color: white;
+    color: #00539CFF;
+}
+
+.operation {
     color: white;
+    background-color: #00539CFF;
+    box-shadow: 0px 0px 5px 5px #FFD662FF ;
 }
-.operation{
-    color: blue;
+
+@media only screen and (max-width: 425px) {
+
+    .box {
+        height: 600px;
+        width: 89%;
+    }
+
+    input {
+        height: 100px;
+        width: 92%;
+        margin: 30px 10px 20px;
+    }
+
+    .btn {
+        width: 96%;
+        margin-left: auto;
+    }
+
+    button {
+        height: 70px;
+        width: 20%;
+        margin-left: 11px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 8px 2px  rgb(255, 255, 255);
+    }
+
+    .operation {
+        color: white;
+        background-color: #00539CFF;
+        box-shadow: 0px 0px 5px 3px #FFD662FF ;
+    }
+    button:active {
+        box-shadow: 0px 0px 8px 2px  #FFD662FF;
+        background-color: white;
+        color: #00539CFF;
+    }
+}
+
+
+@media only screen and (min-width: 426px) and (max-width: 1440px) {
+ 
+    
+    .box {
+        height: 620px;
+        width: 50%;
+    }
+
+    input {
+        height: 120px;
+        width: 95%;
+        margin: 30px 10px 20px;
+    }
+
+    .btn {
+        width: 96%;
+        margin: auto;
+    }
+
+    button {
+        height: 70px;
+        width: 20%;
+        margin: auto;
+        border-radius: 30px;
+        box-shadow: 0px 0px 8px 2px  rgb(255, 255, 255);
+    }
+
+    .operation {
+        color: white;
+        background-color: #00539CFF;
+        box-shadow: 0px 0px 5px 3px #FFD662FF ;
+    }
+    button:active {
+        box-shadow: 0px 0px 8px 2px  #FFD662FF;
+        background-color: white;
+        color: #00539CFF;
+    }
 }
